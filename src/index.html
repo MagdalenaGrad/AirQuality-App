@@ -2,79 +2,81 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 
 
-    <!-- styles -->
-    <script src="https://kit.fontawesome.com/0336e1e887.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
-        integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
+	<!-- styles -->
+	<script src="https://kit.fontawesome.com/0336e1e887.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css"
+		integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 
-    <title>Respire</title>
+	<title>Respire</title>
 </head>
 
 <body>
-    <div class="wrapper">
-        <div class="container content-wrap">
-            <div class="row">
-                <div class="col-md-6">
-                    <header>
-                        <h1>Respire</h1>
-                        <h2>Air Quality Check</h2>
-                    </header>
-                </div>
-                <div class="col-md-6">
-                    <form class="form-group">
-                        <div class="row">
-                            <div class="col">
-                                <select name="country" id="country-select" class="form-control">
-                                    <option value="Country">Country</option>
-                                </select>
-                            </div>
-                            <div class="col">
-                                <select name="city" id="city-select" class="form-control">
-                                    <option value="city">City</option>
-                                </select>
-                            </div>
-                            <div class="col">
-                                <select name="state" id="state-select" class="form-control">
-                                    <option value="state">State</option>
-                                </select>
-                            </div>
-                            <div class="col">
-                                <button type="submit" class="btn btn-primary mb-2">Add</button>
-                            </div>
-                        </div>
-                        <br>
-                        <input type="text" placeholder="Default input" class="form-control">
-                    </form>
-                </div>
-            </div>
-            <section class="main">
-                <div class="row">
-                    <div class="col-md-4 card">
-                        <div class="card-title">
-                            <div><span class="city-card-title">City</span><span class="temperature">10&deg;C</span>
-                            </div>
-                            <i class="fas fa-times"></i>
-                        </div>
-                        <div class="card-body">
-                            <p> PM2.5 | <span class='pm'>100</span>µg/m³</p>
-                            <img src="" alt="icon">
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </div>
-        <footer>
-            <p><strong>Respire</strong> - a new app that shows you realtime levels of air pollution all over the
-                world
-            </p>
-        </footer>
-    </div>
+	<div class="wrapper">
+		<div class="container content-wrap">
+			<div class="row">
+				<div class="col-md-6">
+					<header>
+						<h1>Respire</h1>
+						<h2>Air Quality Check</h2>
+					</header>
+				</div>
+				<div class="col-md-6">
+					<form class="form-group">
+						<div class="row">
+							<div class="col">
+								<select name="country" id="country-select" class="form-control">
+									<option value="Country">Country</option>
+								</select>
+							</div>
+							<div class="col">
+								<select name="state" id="state-select" class="form-control">
+									<option value="state">State</option>
+								</select>
+							</div>
+							<div class="col">
+								<select name="city" id="city-select" class="form-control">
+									<option value="city">City</option>
+								</select>
+							</div>
+							<div class="col">
+								<button type="submit" class="btn btn-primary mb-2">Add</button>
+							</div>
+						</div>
+						<br>
+						<input type="text" placeholder="Default input" class="form-control">
+					</form>
+				</div>
+			</div>
+			<section class="main">
+				<div class="row">
+					<div class="col-md-4 card">
+						<div class="card-title">
+							<div><span class="city-card-title">City</span><span class="temperature">10&deg;C</span>
+							</div>
+							<i class="fas fa-times"></i>
+						</div>
+						<div class="card-body">
+							<p> PM2.5 | <span class='pm'>100</span>µg/m³</p>
+							<p>Good</p>
+							<img class="AVicon" src="../src/imgs/AVicons/01d.png" alt="icon">
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<p><strong>Respire</strong> - a new app that shows you realtime levels of air pollution all over the
+				world
+			</p>
+		</footer>
+	</div>
+	<script src="./js/index.js"></script>
 </body>
 
 </html>
